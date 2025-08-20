@@ -1,0 +1,8 @@
+{
+    "name": "timer-app",
+    "version": "1.0.0",
+    "description": "Aplicación de temporizador web",
+    "author": "Jesus Alfonzo",
+    "license": "MIT",
+    "type": "module"
+}
