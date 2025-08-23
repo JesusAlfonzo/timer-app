@@ -45,7 +45,7 @@ function startTimer() {
             TimerDisplay.textContent = formatTime(remainingTime);
         } else {
             // Asegúrate de que al llegar a 0 se muestre correctamente
-            TimerDisplay.textContent = "00:00:00";
+            TimerDisplay.textContent = "</00:00:00>";
             clearInterval(intervalID);
         }
     }, 1000);
@@ -55,8 +55,8 @@ function startTimer() {
     //Inicializacion de setTimeOut
     timeoutID = setTimeout(() => {
         clearInterval(intervalID)
-        TimerDisplay.textContent = "00:00:00"
-        alert("Temporizador Finalizado.")
+        TimerDisplay.textContent = "</00:00:00>";
+        alert("Temporizador Finalizado.");
     }, remainingTime);
 
 }
@@ -76,7 +76,7 @@ function restartTimer() {
     //Limpieza del setTimeOut declarado e inicializado en la funcion startTimer()
     clearTimeout(timeoutID)
     clearInterval(intervalID)
-    TimerDisplay.textContent = "00:00:00"
+    TimerDisplay.textContent = "</00:00:00>"
     alert("El temporizador se ha restaurado")
 }
 
@@ -120,7 +120,7 @@ function resumeTimer() {
                 TimerDisplay.textContent = formatTime(remainingTime);
             } else {
                 // Asegúrate de que al llegar a 0 se muestre correctamente
-                TimerDisplay.textContent = "00:00:00";
+                TimerDisplay.textContent = "</00:00:00>";
                 clearInterval(intervalID);
             }
         }, 1000);
@@ -149,6 +149,6 @@ function formatTime(ms) {
     seconds = String(seconds).padStart(2, '0')
 
     // Retorna el formato final
-    return `${hours}:${minutes}:${seconds}`
+    return `</${hours}:${minutes}:${seconds}>`
 }
 
