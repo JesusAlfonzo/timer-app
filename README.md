@@ -11,18 +11,21 @@ Una aplicación web sencilla para crear temporizadores personalizados usando Jav
 - Interfaz simple y responsiva.
 
 ## Imágenes
-![Captura-del-timer](src/img/01.PNG)
+<img src="src/img/01.PNG" style="border-radius: 12px;">
 
 
 ## Estructura del proyecto
-```
-src/
-	pages/
-		index.html
-	script/
-		script.js
-	styles/
-		global.css
+
+```text
+├── src
+│   ├── styles
+│   │   └── global.css
+│   ├── pages
+│   │   └── index.html
+│   ├── script
+│   │   └── script.js
+├── README.md
+├── package.json
 ```
 
 ## Uso
