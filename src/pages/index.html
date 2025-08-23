@@ -8,32 +8,43 @@
 </head>
 <body>
     <header>
-        <h1>Timer App</h1>
+        <h1>&lt/Timer App&gt</h1>
     </header>
 
-    <main>
-        <section class="bodyTimer">
+    <section id="mainContainer">
+        <section class="generalContainer">
             <!-- Time Remaning -->
-            <div class="timeRemaining">
-            <span id="timerDisplay">00:00:00</span>
-            </div>
+             <section class="displayContainer">
+                <div class="timeRemaining">
+                    <span id="timerDisplay">&lt/00:00:00&gt</span>
+                </div>
+            </section>
 
             <!-- Timer Inputs -->
-            <div class="inputsTimer">
-                <input id="Hours" type="number" placeholder="00 - Hours">
-                <input id="Minutes" type="number" placeholder="00 - Minutes">
-                <input id="Seconds" type="number" placeholder="00 - Seconds">
-            </div>
+             <section class="inputsContainer">
+                <div class="inputsTimer">
+                    <input id="Hours" type="number" placeholder="Hour">
+                    <input id="Minutes" type="number" placeholder="Min">
+                    <input id="Seconds" type="number" placeholder="Sec">
+                </div>
+            </section>
+
 
             <!-- Timer Buttons -->
-            <div class="controlBtn">
-                <button id="startBtn">Start</button>
-                <button id="pauseBtn">Pause</button>
-                <button id="resumeBtn">Resume</button>
-                <button id="restartBtn"">Restart</button>
-            </div>
+             <section class="btnContainer">
+                <div class="controlBtn">
+                    <button id="startBtn">Start</button>
+                    <button id="pauseBtn">Pause</button>
+                    <button id="resumeBtn">Resume</button>
+                    <button id="restartBtn"">Restart</button>
+                </div>
+            </section>
         </section>
-    </main>
+    </section>
+
+    <footer>
+        <span class="footer1">| Derechos Reservados  | Jesus "Snowy" Alfonzo | 2025 |</span>
+    </footer>
 </body>
 <script src="../script/script.js"></script>
 </html>
