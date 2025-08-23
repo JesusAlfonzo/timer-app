@@ -6,9 +6,13 @@ Una aplicación web sencilla para crear temporizadores personalizados usando Jav
 - Temporizador configurable por horas, minutos y segundos.
 - Botón para iniciar y detener el temporizador.
 - Alertas al finalizar o detener el temporizador.
-- Interfaz simple y responsiva. (En Construcción 🏗)
+- Interfaz simple y responsiva.
 - Alertas al finalizar o detener el temporizador.
 - Interfaz simple y responsiva.
+
+## Imágenes
+![Captura-del-timer](src/img/01.PNG)
+
 
 ## Estructura del proyecto
 ```
