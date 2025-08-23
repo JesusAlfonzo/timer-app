@@ -1,3 +1,4 @@
+
 # Timer App
 
 Una aplicación web sencilla para crear temporizadores personalizados usando JavaScript, HTML y CSS.
@@ -11,7 +12,7 @@ Una aplicación web sencilla para crear temporizadores personalizados usando Jav
 - Interfaz simple y responsiva.
 
 ## Imágenes
-<img src="src/img/01.PNG" style="border-radius: 12px;">
+![Captura-del-timer](src/img/01.PNG)
 
 
 ## Estructura del proyecto
@@ -31,14 +32,15 @@ Una aplicación web sencilla para crear temporizadores personalizados usando Jav
 ## Uso
 1. Abre `src/pages/index.html` en tu navegador.
 2. Ingresa el tiempo deseado en los campos de horas, minutos y segundos.
-3. Haz clic en "Iniciar" para comenzar el temporizador.
-4. Haz clic en "Detener" para cancelar el temporizador antes de que finalice.
+3. Haz clic en "Start" para comenzar el temporizador.
+4. Haz clic en "Pause" para cancelar el temporizador antes de que finalice.
+5. Haz click en "Resume" para reanudar el temporizador.
+6. Haz click en "Restart" para resetear el contador y limpiar los inputs.
 
 ## Requisitos
 - Navegador web moderno (Chrome, Firefox, Edge, etc.)
 
 ## Autor
-Jesus "Snowy" Alfonzo
+Jesus "Snowy" Alfonzo - 2025
 
----
 ¡Personaliza y mejora la app según tus necesidades!
