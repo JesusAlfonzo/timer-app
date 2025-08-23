@@ -57,4 +57,7 @@ body{
 .controlBtn button {
     border-style: hidden;
     border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
 }
