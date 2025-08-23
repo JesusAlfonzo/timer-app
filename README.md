@@ -7,8 +7,8 @@ Una aplicación web sencilla para crear temporizadores personalizados usando Jav
 - Botón para iniciar y detener el temporizador.
 - Alertas al finalizar o detener el temporizador.
 - Interfaz simple y responsiva. (En Construcción 🏗)
-- Alertas al finalizar o detener el temporizador. (En construcción, de momento solo en la consola.)
-- Interfaz simple y responsiva. (En construcción)
+- Alertas al finalizar o detener el temporizador.
+- Interfaz simple y responsiva.
 
 ## Estructura del proyecto
 ```
