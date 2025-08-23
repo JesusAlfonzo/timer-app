@@ -1,146 +1,60 @@
 body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-#timerDisplay{
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#hours{
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0.5rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#minutes{
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0.5rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#seconds{
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0.5rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#startBtn{
-    background-color: green;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#startBtn:hover{
-    background-color: darkgreen;
-}
-
-#pauseBtn{
-    background-color: red;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#pauseBtn:hover{
-    background-color: darkred;
-}
-
-#restartBtn{
-    background-color: gray;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#restartBtn:hover{
-    background-color: darkgray;
-}
-
-#timerControls{
-    display: flex;
+.bodyTimer{
+    display: flexbox;
     justify-content: center;
-    margin-top: 1rem;
+    align-items: center;
+    height: 350px;
+    width: 550px;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
 }
 
-#timerDisplay{
+.timeRemaining{
+    font-size: larger;
+    background-color: grey;
     color: white;
-    font-size: 2rem;
     text-align: center;
-    margin: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 40px;
+    border: 2px;
+    border-style: solid;
+    border-color:black;
 }
 
-#resumeBtn{
-    background-color: blue;
+.inputsTimer{
+    background-color: grey;
     color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    text-align: justify;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+    border-color:black;
 }
 
-#resumeBtn:hover{
-    background-color: darkblue;
+.inputsTimer input{
+    border-style: hidden;
+    border-radius: 5px;
 }
 
-section #timerControls{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-
-}
-
-section #timerDisplay{
+.controlBtn{
+    background-color: grey;
     color: white;
-    font-size: 2rem;
     text-align: center;
-    margin: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 200px;
+    border: 2px;
+    border-style: solid;
+    border-color:black;
 }
 
-input[type="number"]{
-    width: 60px;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 0.5rem;
-}
-
-body{
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.controlBtn button {
+    border-style: hidden;
+    border-radius: 5px;
 }

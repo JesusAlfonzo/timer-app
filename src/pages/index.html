@@ -12,24 +12,27 @@
     </header>
 
     <main>
-        <section>
+        <section class="bodyTimer">
             <!-- Time Remaning -->
-             <span id="timerDisplay">00:00:00</span>
-        </section>
+            <div class="timeRemaining">
+            <span id="timerDisplay">00:00:00</span>
+            </div>
 
-        <section>
             <!-- Timer Inputs -->
-             <input id="Hours" type="number" placeholder="00 - Hours">
-            <input id="Minutes" type="number" placeholder="00 - Minutes">
-            <input id="Seconds" type="number" placeholder="00 - Seconds">
+            <div class="inputsTimer">
+                <input id="Hours" type="number" placeholder="00 - Hours">
+                <input id="Minutes" type="number" placeholder="00 - Minutes">
+                <input id="Seconds" type="number" placeholder="00 - Seconds">
+            </div>
 
             <!-- Timer Buttons -->
-            <button id="startBtn">Start</button>
-            <button id="pauseBtn">Pause</button>
-            <button id="resumeBtn">Resume</button>
-            <button id="restartBtn"">Restart</button>
+            <div class="controlBtn">
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resumeBtn">Resume</button>
+                <button id="restartBtn"">Restart</button>
+            </div>
         </section>
-
     </main>
 </body>
 <script src="../script/script.js"></script>
