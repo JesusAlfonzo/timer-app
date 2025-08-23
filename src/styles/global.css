@@ -31,8 +31,8 @@ header h1{
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 20vh;
-    /* margin: 10px; */
+    height: 55vh;
+    width: 300px;
 }
 
 /* Contador de tiempo */
@@ -48,8 +48,74 @@ header h1{
 }
 
 .timeRemaining span{
-    font-size: 100px;
     font-weight: 400;
+
+}
+
+@media (max-width: 600px) {
+    #mainContainer,
+    .generalContainer {
+        padding-bottom: 40px !important;
+    }
+    #mainContainer,
+    .generalContainer {
+        padding-bottom: 40px !important;
+    }
+    .timeRemaining span {
+        font-size: 70px;
+    }
+    .footer1{
+        font-size: 10px;
+    }
+}
+
+@media (min-height: 600px) {
+    #mainContainer,
+    .generalContainer {
+        padding-bottom: 40px !important;
+    }
+    .timeRemaining span {
+        font-size: 150px;
+    }
+    .footer1{
+        font-size: 16px;
+    }
+    .footer1 span{
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    #mainContainer,
+    .generalContainer {
+        padding-bottom: 40px !important;
+    }
+    .timeRemaining span {
+        font-size: 100px;
+    }
+    .footer1 span{
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width:880px){
+    #mainContainer,
+    .generalContainer {
+        padding-bottom: 40px !important;
+    }
+    .timeRemaining span {
+        font-size: 60px;
+    }
+    .footer1{
+        font-size: 14px;
+    }
 }
 
 /* Inputs de tiempo */
@@ -98,11 +164,32 @@ header h1{
 
 /* Footer */
 
+.footerContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 334px;
+
+}
+
 .footer1{
     text-align: center;
     color: rgba(0, 138, 138, 0.799);
-    z-index: 0;
 
+}
+
+.footer1 span{
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0, 138, 138, 0.799);
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 
