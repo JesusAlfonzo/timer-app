@@ -13,6 +13,9 @@ let TimerDisplay = document.getElementById('timerDisplay')
 // Funcion de Inicio de temporizador
 
 function startTimer() {
+    // Oculta los botones de inicio y reanudar
+    document.getElementById('startBtn').style.display = 'none';
+    document.getElementById('resumeBtn').style.display = 'none';
 
     //date now
     startTime = Date.now()
@@ -50,8 +53,6 @@ function startTimer() {
         }
     }, 1000);
 
-
-
     //Inicializacion de setTimeOut
     timeoutID = setTimeout(() => {
         clearInterval(intervalID)
@@ -78,6 +79,11 @@ function restartTimer() {
     clearInterval(intervalID)
     TimerDisplay.textContent = "00:00:00"
     alert("El temporizador se ha restaurado")
+
+    document.getElementById('startBtn').style.display = ''
+    document.getElementById('pauseBtn').style.display = ''
+    document.getElementById('resumeBtn').style.display = ''
+    document.getElementById('restartBtn').style.display = ''
 }
 
 
@@ -88,11 +94,13 @@ restartBtn.addEventListener("click", restartTimer)
 //Funcion para pausar el temporizador
 
 function pauseTimer() {
+    // Muestra los botones de inicio y reanudar al pausar
     isPaused = true
     if (isPaused) {
         clearTimeout(timeoutID)
         clearInterval(intervalID)
         alert("el temporizador se ha pausado")
+        document.getElementById('resumeBtn').style.display = '';
     }
 }
 
@@ -104,6 +112,10 @@ pauseBtn.addEventListener("click", pauseTimer)
 
 function resumeTimer() {
     if (isPaused === true && remainingTime > 0) {
+
+        document.getElementById('startBtn').style.display = 'none';
+        document.getElementById('resumeBtn').style.display = 'none';
+
         startTime = Date.now()
         clearInterval(intervalID)
 
