@@ -10,6 +10,9 @@ let isPaused = false
 
 let TimerDisplay = document.getElementById('timerDisplay')
 
+//Sonido de alarma para temporizador
+const notificationSound = new Audio('/src/sounds/timerSound.mp3');
+
 // Funcion de Inicio de temporizador
 
 function startTimer() {
@@ -57,7 +60,7 @@ function startTimer() {
     timeoutID = setTimeout(() => {
         clearInterval(intervalID)
         TimerDisplay.textContent = "</00:00:00>";
-        alert("Temporizador Finalizado.");
+        notificationSound.play();
     }, remainingTime);
 
 }
@@ -120,7 +123,7 @@ function resumeTimer() {
         clearInterval(intervalID)
 
         timeoutID = setTimeout(() => {
-            alert("El temporizador ha Finalizado.")
+            notificationSound.play()
         }, remainingTime);
 
         intervalID = setInterval(() => {
