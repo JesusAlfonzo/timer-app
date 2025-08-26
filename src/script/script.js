@@ -11,7 +11,7 @@ let isPaused = false
 let TimerDisplay = document.getElementById('timerDisplay')
 
 //Sonido de alarma para temporizador
-const notificationSound = new Audio('/src/sounds/timerSound.mp3');
+const notificationSound = new Audio('/timer-app/src/sounds/timerSound.mp3');
 
 // Funcion de Inicio de temporizador
 
