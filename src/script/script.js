@@ -10,13 +10,8 @@ let isPaused = false
 
 let TimerDisplay = document.getElementById('timerDisplay')
 
-<<<<<<< HEAD
 //Sonido de alarma para temporizador
 const notificationSound = new Audio('/timer-app/src/sounds/timerSound.mp3');
-=======
-// Sonido de alarma para temporizador
-const notificationSound = new Audio('/src/sounds/timerSound.mp3');
->>>>>>> bc540a9 (Nueva feature, notificaciones en pestaña de navegación)
 
 // Pestaña de navegación
 let TitlePage = document.getElementById("titlePage")
