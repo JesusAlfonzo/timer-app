@@ -10,8 +10,16 @@ let isPaused = false
 
 let TimerDisplay = document.getElementById('timerDisplay')
 
+<<<<<<< HEAD
 //Sonido de alarma para temporizador
 const notificationSound = new Audio('/timer-app/src/sounds/timerSound.mp3');
+=======
+// Sonido de alarma para temporizador
+const notificationSound = new Audio('/src/sounds/timerSound.mp3');
+>>>>>>> bc540a9 (Nueva feature, notificaciones en pestaña de navegación)
+
+// Pestaña de navegación
+let TitlePage = document.getElementById("titlePage")
 
 // Funcion de Inicio de temporizador
 
@@ -49,8 +57,10 @@ function startTimer() {
         if (remainingTime > 0) {
             // Luego, formatea el tiempo restante y muéstralo
             TimerDisplay.textContent = formatTime(remainingTime);
+            TitlePage.textContent = formatTime(remainingTime)
         } else {
             // Asegúrate de que al llegar a 0 se muestre correctamente
+            TitlePage.textContent = "Temporizador Finalizado"
             TimerDisplay.textContent = "</00:00:00>";
             clearInterval(intervalID);
         }
@@ -87,6 +97,8 @@ function restartTimer() {
     document.getElementById('pauseBtn').style.display = ''
     document.getElementById('resumeBtn').style.display = ''
     document.getElementById('restartBtn').style.display = ''
+
+    TitlePage.textContent = "Timer App"
 }
 
 
@@ -104,6 +116,7 @@ function pauseTimer() {
         clearInterval(intervalID)
         alert("el temporizador se ha pausado")
         document.getElementById('resumeBtn').style.display = '';
+        TitlePage.textContent = `${formatTime(remainingTime)} Pausado`
     }
 }
 
@@ -133,8 +146,11 @@ function resumeTimer() {
             if (remainingTime > 0) {
                 // Luego, formatea el tiempo restante y muéstralo
                 TimerDisplay.textContent = formatTime(remainingTime);
+                TitlePage.textContent = formatTime(remainingTime)
+                
             } else {
                 // Asegúrate de que al llegar a 0 se muestre correctamente
+                TitlePage.textContent = "Temporizador Finalizado"
                 TimerDisplay.textContent = "</00:00:00>";
                 clearInterval(intervalID);
             }
